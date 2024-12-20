@@ -61,7 +61,6 @@ func (c *Client) SendMessage(chatId int, text string) error {
 		return e.Wrap("can't send message", err)
 	}
 	return nil
-
 }
 
 func (c *Client) doRequest(query url.Values, method string) (data []byte, err error) {

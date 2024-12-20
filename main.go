@@ -6,8 +6,6 @@ import (
 	"log"
 )
 
-// https://www.youtube.com/watch?v=4-jDamyg7QM&list=PLFAQFisfyqlWDwouVTUztKX2wUjYQ4T3l&index=4
-
 const (
 	tgBotHost = "api.telegram.org"
 )
