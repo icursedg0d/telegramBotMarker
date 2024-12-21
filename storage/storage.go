@@ -3,6 +3,7 @@ package storage
 import (
 	"app/tg/clients/lib/e"
 	"crypto/sha1"
+	"errors"
 	"fmt"
 	"io"
 )
@@ -13,6 +14,8 @@ type Storage interface {
 	Remove(p *Page) error
 	IsExists(p *Page) (bool, error)
 }
+
+var ErrNoSavedPage = errors.New("no saved page")
 
 type Page struct {
 	URL      string
